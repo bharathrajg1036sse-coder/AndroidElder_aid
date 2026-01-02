@@ -3,6 +3,7 @@ include "../config/db.php";
 include "../config/auth.php";
 requireRole("elder");
 
+//server
 $helper=$_POST['helper_id'];
 $rating=$_POST['rating'];
 $review=$_POST['review'];
