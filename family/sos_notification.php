@@ -1,0 +1,1 @@
+<?php require_once '../common/response.php'; res(true,"SOS received"); ?>

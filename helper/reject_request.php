@@ -1,5 +1,5 @@
 
 <?php require_once '../common/db.php'; require_once '../common/response.php';
-$conn->query("UPDATE helper_profiles SET approval_status='rejected' WHERE helper_id=$_POST[id]");
+$conn->query("UPDATE service_requests SET status='rejected' WHERE id=$_POST[id]");
 res(true,"Rejected");
 ?>
