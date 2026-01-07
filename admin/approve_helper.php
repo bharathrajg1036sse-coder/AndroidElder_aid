@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 include "../config/db.php";
 include "../config/auth.php";
@@ -16,3 +17,10 @@ $conn->query("INSERT INTO admin_logs(admin_id,action) VALUES({$_SESSION['user']}
 
 echo json_encode(["status"=>"Helper approved"]);
 ?>
+=======
+
+<?php require_once '../common/db.php'; require_once '../common/response.php';
+$conn->query("UPDATE helper_profiles SET approval_status='approved' WHERE helper_id=$_POST[id]");
+res(true,"Approved");
+?>
+>>>>>>> bd88544c526af5a869a70bbb1af3196781a4646c
