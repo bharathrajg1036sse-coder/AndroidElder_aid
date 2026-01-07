@@ -1,1 +1,0 @@
-<?php require_once '../common/response.php'; res(true,"Logout"); ?>
